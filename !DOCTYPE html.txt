@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pupilas Cósmicas</title>
+
+<style>
+/* ====== ESTILO GENERAL ====== */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: radial-gradient(circle at center, #0a0a1a, #000000);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ====== FONDO DE ESTRELLAS ====== */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: transparent url('https://www.transparenttextures.com/patterns/stardust.png');
+  animation: moveStars 60s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveStars {
+  from {background-position: 0 0;}
+  to {background-position: 10000px 5000px;}
+}
+
+/* ====== CONTENEDOR ====== */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ====== TITULOS ====== */
+h1 {
+  font-size: 3em;
+  margin-top: 100px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  margin-top: 80px;
+  color: #a8d0ff;
+}
+
+/* ====== TEXTO ====== */
+p {
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 20px auto;
+  opacity: 0.9;
+}
+
+/* ====== GALERIA ====== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #6cf;
+}
+
+/* ====== FRASE FINAL ====== */
+.quote {
+  font-style: italic;
+  margin: 80px auto;
+  max-width: 600px;
+  color: #ccc;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  margin-top: 100px;
+  padding: 20px;
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+  <!-- PORTADA -->
+  <h1>Pupilas Cósmicas</h1>
+  <p>Universos ocultos en la mirada felina</p>
+
+  <!-- SOBRE EL PROYECTO -->
+  <h2>Sobre el proyecto</h2>
+  <p>
+  “Pupilas cósmicas” nace de la forma en que percibo los ojos de los gatos. 
+  Al observar su mirada, siento que veo pequeños universos llenos de profundidad, color y misterio. 
+  A través de la fotografía y la inteligencia artificial, transformo los reflejos y colores de sus ojos en composiciones inspiradas en el universo.
+  </p>
+
+  <!-- GALERIA -->
+  <h2>Galería</h2>
+  <div class="gallery">
+    <img src="img1.jpg" alt="De Liris al Cosmos">
+    <img src="img2.jpg" alt="Vórtice">
+    <img src="img3.jpg" alt="El pulso del vacío">
+    <img src="img4.jpg" alt="Nebula de plata">
+    <img src="img5.jpg" alt="Agujero de ámbar">
+    <img src="img6.jpg" alt="Órbita esmeralda">
+  </div>
+
+  <!-- FRASE -->
+  <div class="quote">
+    “No existen dos miradas iguales. En cada mirada felina se esconde algo más que un reflejo.
+    Hay galaxias, hay profundidad, hay misterio.”
+  </div>
+
+  <!-- SOBRE MI -->
+  <h2>Sobre mí</h2>
+  <p>
+  Soy Andrés, estudiante de ingeniería catastral, con un interés constante en la creatividad y la exploración visual. 
+  Me gusta combinar el pensamiento técnico con una mirada estética.
+  </p>
+
+  <footer>
+    © 2026 - Andrés Felipe Niño
+  </footer>
+
+</div>
+
+</body>
+</html>
